@@ -90,10 +90,101 @@ export default function Home() {
           {/* About Card */}
           <div className="bg-[#222222] border border-[#c5de65]/30 rounded-xl p-8">
             <h2 className="text-3xl text-[#c5de65] mb-6">About</h2>
-            <p className="text-gray-300">
-              DEFCON 940 is Denton's longest running monthly Information Security Meetup. We welcome security
-              professionals, enthusiasts, and anyone interested to join us and discuss the latest in cybersecurity.
-            </p>
+            
+            {/* Timeline Section */}
+            <div className="mb-12">
+              <h3 className="text-2xl text-[#c5de65] mb-6">Our Journey</h3>
+              <div className="relative">
+                {/* Timeline Line */}
+                <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-[#c5de65]/30"></div>
+                
+                {/* Timeline Items */}
+                <div className="space-y-8">
+                  {/* 2018 */}
+                  <div className="relative pl-12">
+                    <div className="absolute left-0 w-8 h-8 rounded-full bg-[#c5de65] flex items-center justify-center">
+                      <span className="text-black font-bold">18</span>
+                    </div>
+                    <div className="bg-[#1a1a1a] p-4 rounded-lg border border-[#c5de65]/30">
+                      <h4 className="text-[#c5de65] font-bold mb-2">2018</h4>
+                      <p className="text-gray-300">Pwn School Denton was founded, establishing Denton's first dedicated information security community.</p>
+                    </div>
+                  </div>
+
+                  {/* 2019 */}
+                  <div className="relative pl-12">
+                    <div className="absolute left-0 w-8 h-8 rounded-full bg-[#c5de65] flex items-center justify-center">
+                      <span className="text-black font-bold">19</span>
+                    </div>
+                    <div className="bg-[#1a1a1a] p-4 rounded-lg border border-[#c5de65]/30">
+                      <h4 className="text-[#c5de65] font-bold mb-2">2019</h4>
+                      <p className="text-gray-300">Hosted our first CTF competition, bringing together local security enthusiasts for hands-on challenges.</p>
+                    </div>
+                  </div>
+
+                  {/* 2020 */}
+                  <div className="relative pl-12">
+                    <div className="absolute left-0 w-8 h-8 rounded-full bg-[#c5de65] flex items-center justify-center">
+                      <span className="text-black font-bold">20</span>
+                    </div>
+                    <div className="bg-[#1a1a1a] p-4 rounded-lg border border-[#c5de65]/30">
+                      <h4 className="text-[#c5de65] font-bold mb-2">2020</h4>
+                      <p className="text-gray-300">Successfully transitioned to virtual meetings during the pandemic, expanding our reach beyond Denton.</p>
+                    </div>
+                  </div>
+
+                  {/* 2021 */}
+                  <div className="relative pl-12">
+                    <div className="absolute left-0 w-8 h-8 rounded-full bg-[#c5de65] flex items-center justify-center">
+                      <span className="text-black font-bold">21</span>
+                    </div>
+                    <div className="bg-[#1a1a1a] p-4 rounded-lg border border-[#c5de65]/30">
+                      <h4 className="text-[#c5de65] font-bold mb-2">2021</h4>
+                      <p className="text-gray-300">Rebranded as DC940, becoming an official DEF CON Group in October, joining the global DEF CON community.</p>
+                    </div>
+                  </div>
+
+                  {/* Present */}
+                  <div className="relative pl-12">
+                    <div className="absolute left-0 w-8 h-8 rounded-full bg-[#c5de65] flex items-center justify-center">
+                      <span className="text-black font-bold">Now</span>
+                    </div>
+                    <div className="bg-[#1a1a1a] p-4 rounded-lg border border-[#c5de65]/30">
+                      <h4 className="text-[#c5de65] font-bold mb-2">Present</h4>
+                      <p className="text-gray-300">Continuing to grow and serve the Denton security community with monthly meetings and special events.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Rich History Section */}
+            <div className="space-y-6">
+              <h3 className="text-2xl text-[#c5de65] mb-4">Our Rich History</h3>
+              
+              <div className="bg-[#1a1a1a] p-6 rounded-lg border border-[#c5de65]/30">
+                <p className="text-gray-300 mb-4">
+                  DC940 is Denton's longest-running monthly Information Security Meetup. Formerly known as Pwn School Denton, it was rebranded as a DEF CON Group in October 2021. The group consists of Information Security Professionals and Hobbyist Hackers alike.
+                </p>
+                <p className="text-gray-300 mb-4">
+                  Our journey began with a simple mission: to create a space where security enthusiasts could learn, share, and grow together. Over the years, we've evolved from a small gathering of local hackers to a thriving community that welcomes all ages and skill levels.
+                </p>
+                <p className="text-gray-300 mb-4">
+                  Monthly meetings offer the latest information on Tactics, Techniques, and Procedures pertaining to Information Security and Hacking. From hands-on workshops to expert presentations, we cover a wide range of topics that reflect the ever-evolving landscape of cybersecurity.
+                </p>
+                <p className="text-gray-300">
+                  As a DEF CON Group, we maintain the hacker ethos while fostering a welcoming environment for newcomers. Our meetings, held every third Monday of the month, have become a cornerstone of Denton's tech community, bringing together professionals, students, and enthusiasts in the pursuit of knowledge and skill development.
+                </p>
+              </div>
+
+              {/* Meeting Info */}
+              <div className="bg-[#1a1a1a] p-6 rounded-lg border border-[#c5de65]/30">
+                <h4 className="text-xl text-[#c5de65] mb-4">Join Our Community</h4>
+                <p className="text-gray-300">
+                  Whether you're a seasoned security professional or just starting your journey in information security, DC940 welcomes you. Our meetings are held every third Monday of the month, providing a regular opportunity to connect, learn, and contribute to the local security community.
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Past Talks Card */}
