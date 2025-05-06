@@ -7,9 +7,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "DEFCON 940 - Denton's Information Security Meetup",
-  description: "Denton's longest running monthly Information Security Meetup",
-    generator: 'v0.dev'
+  title: "DC940.org",
+  description: "DC940 Website",
 }
 
 export default function RootLayout({
@@ -18,10 +17,18 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
-          {children}
+        <div className="bg-overlay"></div>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="content-wrapper">
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>
